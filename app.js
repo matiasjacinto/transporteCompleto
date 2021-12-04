@@ -4,6 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+require('dotenv').config(); //para el envio de formulario, carga los datos del .env , se coloca antes de que declare las paginas
+
 var indexRouter = require('./routes/index');
 var nosotrosRouter=require('./routes/nosotros');//nosotros.js, manejador, controlador
 var serviciosRouter=require('./routes/servicios');

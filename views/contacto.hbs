@@ -1,27 +1,29 @@
 <main class="holder">
        <div class="contacto">
            <h2>contacto rapido</h2>
-           <form action="" class="formulario">
+           <form action="/contacto" method="post" class="formulario"><!--en accion coloco el controlador que se va a procesar contacto.js --->
                <p>
                     <label for="">nombre</label>
-                    <input type="text">
+                    <input type="text" name="nombre">
                </p>
                <p>
                     <label for="">email</label>
-                    <input type="text">
+                    <input type="text" name="email">
                 </p>
                 <p>
                     <label for="">telefono</label>
-                    <input type="text">
+                    <input type="text" name="tel">
                 </p>
                 <p>
                     <label for="">comentarios</label>
-                    <textarea name=""></textarea>
+                    <textarea name="comentarios"></textarea>
+                    <!--en name les agrego los nombres a todos-->
                 </p>
                 <p class="centrar">
                     <input type="submit" value="enviar">
                 </p>
            </form>
+           <p>{{message}}</p><!--recibe el mensaje que pusimos en la funcion contacto.js-->
 
        </div>
        <div class="redes">
