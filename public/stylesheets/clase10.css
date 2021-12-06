@@ -239,15 +239,15 @@ h2 {
 }
 
 .fas {
-  font-size: 50px;
+  font-size: 30px;
   color: var(--blue);
-  border: solid 4px var(--celeste);
+  /*border: solid 4px var(--celeste);*/
   border-radius: 50%;
 }
 .fab {
-  font-size: 50px;
+  font-size: 30px;
   color: var(--blue);
-  border: solid 2px var(--celeste);
+  /*border: solid 2px var(--celeste);*/
   border-radius: 50%;
 }
 .redes ul {

@@ -1,9 +1,42 @@
+:root {
+  --blue: #2e64a1;
+  --blanco: white;
+  --celeste: #6da9ed;
+  --hover: #4c76a5;
+  --gris: #ccc;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+header {
+  background-color: var(--blue);
+  padding: 16px 0;
+}
+header h1 {
+  color: var(--blanco);
+  font-size: 2.5rm;
+  font-weight: 100; /*hace mas fina la letra, lo sacamos de google font que vinculamos*/
+  font-style: italic;
+  display: inline-block; /*para poner al lado del logo*/
+  position: relative; /*para poder variar el posicionamiento*/
+  bottom: 35px; /*subo la palabra 35 px para que quede a la mitad del logo*/
+}
 .logo {
   text-align: center;
 }
+
 .logo h1 {
   position: static;
 }
 .container {
   margin: 100px auto;
+}
+footer {
+  background-color: var(--gris);
+  padding: 20px 0;
+  text-align: center;
+  clear: both; /*el elementto va de punta a punta, hace como si le pusieramos un enter */
 }
