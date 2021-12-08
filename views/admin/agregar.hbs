@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h3>Agregar Novedades</h3>
+      <form action="/admin/novedades/agregar" method="post">
+        <!--quien va a procesar la informacion-->
+        <div class="mb-3">
+          <!--<label for="usuario" class="form-label">Titulo</label>-->
+          <input
+            type="text"
+            class="form-control"
+            id="titulo"
+            placeholder="titulo"
+            name="titulo"
+          />
+        </div>
+        <div class="mb-3">
+          <!--<label for="usuario" class="form-label">Titulo</label>-->
+          <textarea
+            type="text"
+            class="form-control"
+            id="titulo"
+            placeholder="subtitulo"
+            name="subtitulo"
+          ></textarea>
+        </div>
+        <div class="mb-3">
+          <!--<label for="usuario" class="form-label">Titulo</label>-->
+          <textarea
+            type="text"
+            class="form-control"
+            id="titulo"
+            placeholder="contenido"
+            name="cuerpo"
+          ></textarea>
+          <!--el name=cuerpo sale de la base de datos-->
+        </div>
+
+        <button type="submit" class="btn btn-success">Guardar</button>
+      </form>
+      {{#if message}}
+        <p>{{message}}</p>
+      {{/if}}
+
+    </div>
+  </div>
+
+</div>
